@@ -14,7 +14,7 @@
       renderChecker(location) {
         let checker = this.checkers.find(checker => checker.location === location)
         if(checker) {
-          return location === checker.location
+          return location === checker.location && checker.status === "alive"
         }
         else {
           return false
@@ -56,8 +56,8 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 9vw;
-    height: 70vh;
+    width: 18vw;
+    height: 56vh;
   }
 
   #red-dead-zone {
@@ -74,8 +74,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 72vw;
-    height: 72vh;
+    width: 56vw;
+    height: 56vh;
   }
 
   .space {
@@ -83,8 +83,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 9vw;
-    height: 9vh;
+    width: 7vw;
+    height: 7vh;
   }
 
   .space-tan {
@@ -96,8 +96,8 @@
   }
 
   .checker {
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
   }
 
