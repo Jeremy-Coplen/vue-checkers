@@ -24,31 +24,12 @@
     
               }
               else {
-                if(document.getElementById(`space-${location + 7}`).childNodes[0].nodeName === "DIV") {
+                if(location > 0 && location < 9) {
+                  if(document.getElementById(`space-${location + 7}`).childNodes[0].nodeName === "DIV") {
                     if(document.getElementById(`space-${location + 7}`).childNodes[0].className.includes("checker-red")) {
                       if(document.getElementById(`space-${location + 14}`).childNodes[0].nodeName === "DIV") {
-                        console.log("hit")
-                        if(document.getElementById(`space-${location - 9}`).childNodes[0].nodeName === "DIV") {
-                          if(document.getElementById(`space-${location - 9}`).childNodes[0].className.includes("checker-red")) {
-                            if(document.getElementById(`space-${location - 18}`).childNodes[0].nodeName === "DIV") {
-                              alert("Unable to move checker")
-                              return
-                            }
-                            else {
-                              this.location = location
-                              this.clicked = true
-                            }
-                          }
-                          else {
-                            alert("Unable to move checker")
-                            return
-                          }
-                        }
-                        else {
-                          this.location = location
-                          this.clicked = true
-                          return
-                        }
+                        alert("Unable to move checker")
+                        return
                       }
                       else {
                         this.location = location
@@ -61,10 +42,267 @@
                       return
                     }
                   }
+                  else {
+                    this.location = location
+                    this.clicked = true
+                    return
+                  }
+                }
+                else if(location > 56 && location < 65) {
+                  if(document.getElementById(`space-${location - 9}`).childNodes[0].nodeName === "DIV") {
+                    if(document.getElementById(`space-${location - 9}`).childNodes[0].className.includes("checker-red")) {
+                      if(document.getElementById(`space-${location - 18}`).childNodes[0].nodeName === "DIV") {
+                        alert("Unable to move checker")
+                        return
+                      }
+                      else {
+                        this.location = location
+                        this.clicked = true
+                        return
+                      }
+                    }
+                    else {
+                      alert("Unable to move checker")
+                      return
+                    }
+                  }
+                  else {
+                    this.location = location
+                    this.clicked = true
+                    return
+                  }
+                }
                 else {
-                  this.location = location
-                  this.clicked = true
-                  return
+                  if(document.getElementById(`space-${location + 7}`)) {
+                    if(document.getElementById(`space-${location + 7}`).childNodes[0].nodeName === "DIV") {
+                        if(document.getElementById(`space-${location + 7}`).childNodes[0].className.includes("checker-red")) {
+                          if(document.getElementById(`space-${location + 14}`)) {
+                            if(document.getElementById(`space-${location + 14}`).childNodes[0].nodeName === "DIV") {
+                              if(document.getElementById(`space-${location - 9}`).childNodes) {
+                                if(document.getElementById(`space-${location - 9}`).childNodes[0].nodeName === "DIV") {
+                                  if(document.getElementById(`space-${location - 9}`).childNodes[0].className.includes("checker-red")) {
+                                    if(document.getElementById(`space-${location - 18}`)) {
+                                      if(document.getElementById(`space-${location - 18}`).childNodes[0].nodeName === "DIV") {
+                                        alert("Unable to move checker")
+                                        return
+                                      }
+                                      else {
+                                        this.location = location
+                                        this.clicked = true
+                                        return
+                                      }
+                                    }
+                                  }
+                                  else {
+                                    alert("Unable to move checker")
+                                  }
+                                }
+                                else {
+                                  this.location = location
+                                  this.clicked = true
+                                  return
+                                }
+                              }
+                              else {
+                                alert("Unable to move checker")
+                                return
+                              }
+                            }
+                            else {
+                              this.location = location
+                              this.clicked = true
+                              return
+                            }
+                          }
+                          else {
+                            if(document.getElementById(`space-${location - 9}`).childNodes) {
+                              if(document.getElementById(`space-${location - 9}`).childNodes[0].nodeName === "DIV") {
+                                if(document.getElementById(`space-${location - 9}`).childNodes[0].className.includes("checker-red")) {
+                                  if(document.getElementById(`space-${location - 18}`)) {
+                                    if(document.getElementById(`space-${location - 18}`).childNodes[0].nodeName === "DIV") {
+                                      alert("Unable to move checker")
+                                      return
+                                    }
+                                    else {
+                                      this.location = location
+                                      this.clicked = true
+                                      return
+                                    }
+                                  }
+                                }
+                                else {
+                                  alert("Unable to move checker")
+                                  return
+                                }
+                              }
+                              else {
+                                this.location = location
+                                this.clicked = true
+                                return
+                              }
+                            }
+                            else {
+                              alert("Unable to move checker")
+                              return
+                            }
+                          }
+                        }
+                        else {
+                          if(document.getElementById(`space-${location - 9}`).childNodes) {
+                            if(document.getElementById(`space-${location - 9}`).childNodes[0].nodeName === "DIV") {
+                              if(document.getElementById(`space-${location - 9}`).childNodes[0].className.includes("checker-red")) {
+                                if(document.getElementById(`space-${location - 18}`)) {
+                                  if(document.getElementById(`space-${location - 18}`).childNodes[0].nodeName === "DIV") {
+                                    alert("Unable to move checker")
+                                    return
+                                  }
+                                  else {
+                                    this.location = location
+                                    this.clicked = true
+                                    return
+                                  }
+                                }
+                              }
+                              else {
+                                alert("Unable to move checker")
+                              }
+                            }
+                            else {
+                              this.location = location
+                              this.clicked = true
+                              return
+                            }
+                          }
+                          else {
+                            alert("Unable to move checker")
+                            return
+                          }
+                        }
+                      }
+                    else {
+                      this.location = location
+                      this.clicked = true
+                      return
+                    }
+                  }
+                  else if(document.getElementById(`space-${location - 9}`)) {
+                    if(document.getElementById(`space-${location - 9}`).childNodes[0].nodeName === "DIV") {
+                      if(document.getElementById(`space-${location - 9}`).childNodes[0].className.includes("checker-red")) {
+                        if(document.getElementById(`space-${location - 18}`)) {
+                          if(document.getElementById(`space-${location - 18}`).childNodes[0].nodeName === "DIV") {
+                            if(document.getElementById(`space-${location + 7}`)) {
+                              if(document.getElementById(`space-${location + 7}`).childNodes[0].nodeName === "DIV") {
+                                  if(document.getElementById(`space-${location + 7}`).childNodes[0].className.includes("checker-red")) {
+                                    if(document.getElementById(`space-${location + 14}`)) {
+                                      if(document.getElementById(`space-${location + 14}`).childNodes[0].nodeName === "DIV") {
+                                        alert("Unable to move checker")
+                                        return
+                                      }
+                                      else {
+                                        this.location = location
+                                        this.clicked = true
+                                        return
+                                      }
+                                    }
+                                  }
+                                  else {
+                                    alert("Unable to move checker")
+                                    return
+                                  }
+                                }
+                              else {
+                                this.location = location
+                                this.clicked = true
+                                return
+                              }
+                            }
+                            else {
+                              alert("Unable to move checker")
+                              return
+                            }
+                          }
+                          else {
+                            this.location = location
+                            this.clicked = true
+                            return
+                          }
+                        }
+                        else {
+                          if(document.getElementById(`space-${location + 7}`)) {
+                            if(document.getElementById(`space-${location + 7}`).childNodes[0].nodeName === "DIV") {
+                                if(document.getElementById(`space-${location + 7}`).childNodes[0].className.includes("checker-red")) {
+                                  if(document.getElementById(`space-${location + 14}`)) {
+                                    if(document.getElementById(`space-${location + 14}`).childNodes[0].nodeName === "DIV") {
+                                      alert("Unable to move checker")
+                                      return
+                                    }
+                                    else {
+                                      this.location = location
+                                      this.clicked = true
+                                      return
+                                    }
+                                  }
+                                }
+                                else {
+                                  alert("Unable to move checker")
+                                  return
+                                }
+                              }
+                            else {
+                              this.location = location
+                              this.clicked = true
+                              return
+                            }
+                          }
+                          else {
+                            alert("Unable to move checker")
+                            return
+                          }
+                        }
+                      }
+                      else {
+                        if(document.getElementById(`space-${location + 7}`)) {
+                          if(document.getElementById(`space-${location + 7}`).childNodes[0].nodeName === "DIV") {
+                              if(document.getElementById(`space-${location + 7}`).childNodes[0].className.includes("checker-red")) {
+                                if(document.getElementById(`space-${location + 14}`)) {
+                                  if(document.getElementById(`space-${location + 14}`).childNodes[0].nodeName === "DIV") {
+                                    alert("Unable to move checker")
+                                    return
+                                  }
+                                  else {
+                                    this.location = location
+                                    this.clicked = true
+                                    return
+                                  }
+                                }
+                              }
+                              else {
+                                alert("Unable to move checker")
+                                return
+                              }
+                            }
+                          else {
+                            this.location = location
+                            this.clicked = true
+                            return
+                          }
+                        }
+                        else {
+                          alert("Unable to move checker")
+                          return
+                        }
+                      }
+                    }
+                    else {
+                      this.location = location
+                      this.clicked = true
+                      return
+                    }
+                  }
+                  else {
+                    alert("Unable to move checker")
+                    return
+                  }
                 }
               }
             }
@@ -79,30 +317,12 @@
     
               }
               else {
-                if(document.getElementById(`space-${location + 9}`).childNodes[0].nodeName === "DIV") {
+                if(location > 0 && location < 9) {
+                  if(document.getElementById(`space-${location + 9}`).childNodes[0].nodeName === "DIV") {
                     if(document.getElementById(`space-${location + 9}`).childNodes[0].className.includes("checker-black")) {
                       if(document.getElementById(`space-${location + 18}`).childNodes[0].nodeName === "DIV") {
-                        if(document.getElementById(`space-${location - 7}`).childNodes[0].nodeName === "DIV") {
-                          if(document.getElementById(`space-${location - 7}`).childNodes[0].className.includes("checker-black")) {
-                            if(document.getElementById(`space-${location - 14}`).childNodes[0].nodeName === "DIV") {
-                              alert("Unable to move checker")
-                              return
-                            }
-                            else {
-                              this.location = location
-                              this.clicked = true
-                            }
-                          }
-                          else {
-                            alert("Unable to move checker")
-                            return
-                          }
-                        }
-                        else {
-                          this.location = location
-                          this.clicked = true
-                          return
-                        }
+                        alert("Unable to move checker")
+                        return
                       }
                       else {
                         this.location = location
@@ -115,10 +335,277 @@
                       return
                     }
                   }
+                  else {
+                    this.location = location
+                    this.clicked = true
+                    return
+                  }
+                }
+                else if(location > 56 && location < 65) {
+                  if(document.getElementById(`space-${location - 7}`).childNodes[0].nodeName === "DIV") {
+                    if(document.getElementById(`space-${location - 7}`).childNodes[0].className.includes("checker-black")) {
+                      if(document.getElementById(`space-${location - 14}`).childNodes[0].nodeName === "DIV") {
+                        alert("Unable to move checker")
+                        return
+                      }
+                      else {
+                        this.location = location
+                        this.clicked = true
+                        return
+                      }
+                    }
+                    else {
+                      alert("Unable to move checker")
+                      return
+                    }
+                  }
+                  else {
+                    this.location = location
+                    this.clicked = true
+                    return
+                  }
+                }
                 else {
-                  this.location = location
-                  this.clicked = true
-                  return
+                  if(document.getElementById(`space-${location + 9}`).childNodes) {
+                    if(document.getElementById(`space-${location + 9}`).childNodes[0].nodeName === "DIV") {
+                        if(document.getElementById(`space-${location + 9}`).childNodes[0].className.includes("checker-black")) {
+                          if(document.getElementById(`space-${location + 18}`).childNodes) {
+                            if(document.getElementById(`space-${location + 18}`).childNodes[0].nodeName === "DIV") {
+                              if(document.getElementById(`space-${location - 7}`).childNodes) {
+                                if(document.getElementById(`space-${location - 7}`).childNodes[0].nodeName === "DIV") {
+                                  if(document.getElementById(`space-${location - 7}`).childNodes[0].className.includes("checker-black")) {
+                                    if(document.getElementById(`space-${location - 14}`).childNodes) {
+                                      if(document.getElementById(`space-${location - 14}`).childNodes[0].nodeName === "DIV") {
+                                        alert("Unable to move checker")
+                                        return
+                                      }
+                                      else {
+                                        this.location = location
+                                        this.clicked = true
+                                        return
+                                      }
+                                    }
+                                  }
+                                  else {
+                                    alert("Unable to move checker")
+                                  }
+                                }
+                                else {
+                                  this.location = location
+                                  this.clicked = true
+                                  return
+                                }
+                              }
+                              else {
+                                alert("Unable to move checker")
+                                return
+                              }
+                            }
+                            else {
+                              this.location = location
+                              this.clicked = true
+                              return
+                            }
+                          }
+                          else {
+                            if(document.getElementById(`space-${location - 7}`).childNodes) {
+                              if(document.getElementById(`space-${location - 7}`).childNodes[0].nodeName === "DIV") {
+                                if(document.getElementById(`space-${location - 7}`).childNodes[0].className.includes("checker-black")) {
+                                  if(document.getElementById(`space-${location - 14}`).childNodes) {
+                                    if(document.getElementById(`space-${location - 14}`).childNodes[0].nodeName === "DIV") {
+                                      alert("Unable to move checker")
+                                      return
+                                    }
+                                    else {
+                                      this.location = location
+                                      this.clicked = true
+                                      return
+                                    }
+                                  }
+                                }
+                                else {
+                                  alert("Unable to move checker")
+                                }
+                              }
+                              else {
+                                this.location = location
+                                this.clicked = true
+                                return
+                              }
+                            }
+                            else {
+                              alert("Unable to move checker")
+                              return
+                            }
+                          }
+                        }
+                        else {
+                          if(document.getElementById(`space-${location - 7}`).childNodes) {
+                            if(document.getElementById(`space-${location - 7}`).childNodes[0].nodeName === "DIV") {
+                              if(document.getElementById(`space-${location - 7}`).childNodes[0].className.includes("checker-black")) {
+                                if(document.getElementById(`space-${location - 14}`).childNodes) {
+                                  if(document.getElementById(`space-${location - 14}`).childNodes[0].nodeName === "DIV") {
+                                    alert("Unable to move checker")
+                                    return
+                                  }
+                                  else {
+                                    this.location = location
+                                    this.clicked = true
+                                    return
+                                  }
+                                }
+                              }
+                              else {
+                                alert("Unable to move checker")
+                              }
+                            }
+                            else {
+                              this.location = location
+                              this.clicked = true
+                              return
+                            }
+                          }
+                          else {
+                            alert("Unable to move checker")
+                            return
+                          }
+                        }
+                      }
+                    else {
+                      this.location = location
+                      this.clicked = true
+                      return
+                    }
+                  }
+                  else if(document.getElementById(`space-${location - 7}`).childNodes) {
+                    if(document.getElementById(`space-${location - 7}`).childNodes[0].nodeName === "DIV") {
+                      if(document.getElementById(`space-${location - 7}`).childNodes[0].className.includes("checker-black")) {
+                        if(document.getElementById(`space-${location - 14}`).childNodes) {
+                          if(document.getElementById(`space-${location - 14}`).childNodes[0].nodeName === "DIV") {
+                            if(document.getElementById(`space-${location + 9}`).childNodes) {
+                              if(document.getElementById(`space-${location + 9}`).childNodes[0].nodeName === "DIV") {
+                                  if(document.getElementById(`space-${location + 9}`).childNodes[0].className.includes("checker-black")) {
+                                    if(document.getElementById(`space-${location + 18}`).childNodes) {
+                                      if(document.getElementById(`space-${location + 18}`).childNodes[0].nodeName === "DIV") {
+                                        alert("Unable to move checker")
+                                        return
+                                      }
+                                      else {
+                                        this.location = location
+                                        this.clicked = true
+                                        return
+                                      }
+                                    }
+                                    else {
+
+                                    }
+                                  }
+                                  else {
+                                    alert("Unable to move checker")
+                                    return
+                                  }
+                                }
+                              else {
+                                this.location = location
+                                this.clicked = true
+                                return
+                              }
+                            }
+                            else {
+                              alert("Unable to move checker")
+                              return
+                            }
+                          }
+                          else {
+                            this.location = location
+                            this.clicked = true
+                            return
+                          }
+                        }
+                        else {
+                          if(document.getElementById(`space-${location + 9}`).childNodes) {
+                            if(document.getElementById(`space-${location + 9}`).childNodes[0].nodeName === "DIV") {
+                                if(document.getElementById(`space-${location + 9}`).childNodes[0].className.includes("checker-black")) {
+                                  if(document.getElementById(`space-${location + 18}`).childNodes) {
+                                    if(document.getElementById(`space-${location + 18}`).childNodes[0].nodeName === "DIV") {
+                                      alert("Unable to move checker")
+                                      return
+                                    }
+                                    else {
+                                      this.location = location
+                                      this.clicked = true
+                                      return
+                                    }
+                                  }
+                                  else {
+                                    alert("Unable to move checker")
+                                    return
+                                  }
+                                }
+                                else {
+                                  alert("Unable to move checker")
+                                  return
+                                }
+                              }
+                            else {
+                              this.location = location
+                              this.clicked = true
+                              return
+                            }
+                          }
+                          else {
+                            alert("Unable to move checker")
+                            return
+                          }
+                        }
+                      }
+                      else {
+                        if(document.getElementById(`space-${location + 9}`).childNodes) {
+                          if(document.getElementById(`space-${location + 9}`).childNodes[0].nodeName === "DIV") {
+                              if(document.getElementById(`space-${location + 9}`).childNodes[0].className.includes("checker-black")) {
+                                if(document.getElementById(`space-${location + 18}`).childNodes) {
+                                  if(document.getElementById(`space-${location + 18}`).childNodes[0].nodeName === "DIV") {
+                                    alert("Unable to move checker")
+                                    return
+                                  }
+                                  else {
+                                    this.location = location
+                                    this.clicked = true
+                                    return
+                                  }
+                                }
+                                else {
+                                  alert("Unable to move checker")
+                                  return
+                                }
+                              }
+                              else {
+                                alert("Unable to move checker")
+                                return
+                              }
+                            }
+                          else {
+                            this.location = location
+                            this.clicked = true
+                            return
+                          }
+                        }
+                        else {
+                          alert("Unable to move checker")
+                          return
+                        }
+                      }
+                    }
+                    else {
+                      this.location = location
+                      this.clicked = true
+                      return
+                    }
+                  }
+                  else {
+                    alert("Unable to move checker")
+                    return
+                  }
                 }
               }
             }
@@ -130,7 +617,6 @@
         }
       },
       moveChecker(location) {
-        console.log(this.clicked)
         if(this.clicked) {
           if(document.getElementById(`space-${location}`).childNodes[0].nodeName === "DIV") {
             alert("Invalid move")
@@ -208,7 +694,6 @@
                 
               }
               else {
-                console.log("hit")
                 if(this.location - 7 === location) {
                   let index = this.checkers.findIndex(checker => checker.location === this.location)
                   this.checkers[index].location = location
